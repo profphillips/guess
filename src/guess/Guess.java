@@ -1,5 +1,6 @@
 package guess;
 
+import java.util.Random;
 import java.util.Scanner;
 
 /**
@@ -11,7 +12,9 @@ import java.util.Scanner;
 public class Guess {
 
     public static void main(String[] args) {
-        int answer = 5;
+        //int answer = 5;
+        Random rand = new Random();
+        int answer = rand.nextInt(10) + 1;
         Scanner sc = new Scanner(System.in);
         System.out.println("John's Guessing Game");
         System.out.println("Guess a number between 1 and 10");
