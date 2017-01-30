@@ -18,10 +18,13 @@ public class Guess {
 
         while (true) {
             System.out.print("Enter a number: ");
-            if (sc.nextInt() == answer) {
+            int guess = sc.nextInt();
+            if (guess == answer) {
                 break;
+            } else if (guess >= answer) {
+                System.out.println("The number is lower, try again...");
             } else {
-                System.out.println("Sorry, try again");
+                System.out.println("The number is higher, try again...");
             }
         }
         System.out.println("You got it!!!");
