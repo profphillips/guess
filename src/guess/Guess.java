@@ -6,6 +6,7 @@ import java.util.Scanner;
 /**
  * Have the user guess a number between 1 and 10. Loop until they get the right
  * answer. More to come.
+ * This line was added in github.
  *
  * @author John Phillips
  */
